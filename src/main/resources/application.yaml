@@ -10,8 +10,8 @@ spring:
         git:
           uri: https://github.com/titiscms/ead-config-server-repo
           default-label: master
-          username: titisbackup@gmail.com
-          password: ***
+          username: '{cipher}AgBR/hVPLXOXRU791lxrI/Cpw0W6yrxcPnYyIXep0ysOc4KWwXwNMIKxfxYXAyzcyG3iaqstmk6191erlgIfge/82vuP1TARKCt/KeWcYjvHi184PNq9yxOcbU3VcwcwsIYsi0/fZpQlnfQWTlcJGqrf30mN/zYYkuES8Ol4Y2Bppm6Xuu0iqHUim8EbRww7K01anwx7CfdY3Xaz0mCGU4J3wkDK9F2cxxJIpTrctHEkMK8VeQN4jYhCFHtiq6zOq5rysD09+iDbJqfroWz9Zdw6yKwA/G9p40zNaFTJuEm+Nf94cbrY8qEAjj8I6QoXcBDbDM2yo7Zz2O09v0mOEdPSzWupe0YICp86VLEcj6Pp3vcdly6OJIZlKhlNGF6Urx77c815d92SKU3vfUxmULYLu0fWW2PtL2MDt7KdHgkpa9q6J6hOGsxGwffcYJ0DDAd2cAgWT+n9dQY86kl1YMSRgMZxzN7GADNNS9noxNnRB5N2jBCVsdk1x3FhcVCVMEie+R0sMbeCyE0DE5i9tPI/FClQCAa5vpfcbwJmBX5KRw21dvX/7afuZaOt/1LRpJd7TWfiSgxuDdveAqTHnA2f3J8GR0dGtuKnxrwbWTgWCW+fmFjN2wUvpGh2cz+Ap/KOSxujqDHn0j8qPmVkjuULN2zT7AAiuKq33oQPZ7o7xBeJ+PfdeNl4CyPZO18Brc0OijIp8U455mATOzqPKGuH7zITNiw2LHeGnr5zsKlpLg=='
+          password: '{cipher}AgBtMY/ZjbyrHsW/ZdN5sqNOcRY/ESS60HyXHDSiHzB/duShkBeYquNQW6+RNMdNpFTKff6ywd+HYWOaz/4D+2D0tB/PhxuBzyxToyEhX3B4I28heeuXpayanCLyl+SmL7E4grIINhAXEd9ZzDohy5iy8FX0qKeDl8HIezK5oiM4ghgepMNCbHrd0eMv9MFgbopCMTEAKYHq+4R76yk8rzDOUfUug3GGYCroutRIK66AgPWJUce9uKkJEtfej110Zllkd+8sShVCG/lxCAUxaYtxmO9mJflM3CdSq+97XHlRGKeSSLZOOSwcYw15XP0v6xYn9zPnjGZLXu5PHV1JJBYp2hGBpneYWF/Sx6/dbVOAo7TA659KwUPKvFNKjgy1x1f0BTzezmHNbJ10v8+vCV9YWKaJEcwHbAIXx1fsicr7c6uEVtSjTCeribykivlGmZtSrqgOtp1qmlu1iv16U35lW9abMSVUNKbg/6aiWz1JhOFdjapPvqdtaZ6c/FNN+/Vrwpe5v2qOrmCFYNDIi5xNllO4mSGEEi4n/hwlwv1ESkQlErclOtjUF22R5rjk5BnDsZ0y6587LGdPybpqKcqBwIVbp3m3ZRR+ZfAFqseZEaog/D9iPMmPsDCCcqjm4h01HZsaOyWR6VKhWw+OXHeaa0930CMg4GbNxojqemq7HrnvGQiMpUcdfnd0OgV4fm+JDGadZ3HZm0mOV23Cq/AVk6byPSLlnQzZGnOQ1B65+bPyjT4rbZClpQCK3BLFGDY='
 
 eureka:
   client:
@@ -19,3 +19,10 @@ eureka:
       default-zone: 'http://localhost:8761/eureka'
   instance:
     hostname: localhost
+
+encrypt:
+  key-store:
+    location: classpath:/config-server.jks
+    secret: ***
+    alias: config-server-key
+    password: ***
